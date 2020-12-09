@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\Vita\EventWeb\app\Http</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">C:\Users\Vita\EventWeb\app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Http</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/SubComment.php.html#10">App\Http\Controllers\SubComment</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#13">App\Http\Controllers\UserController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#10">App\Http\Controllers\WebApi</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebEventsControler.php.html#8">App\Http\Controllers\Web\WebEventsControler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#8">App\Http\Controllers\Web\WebUserControler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#9">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#12">App\Http\Controllers\EventController</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#11">App\Http\Controllers\CommentControler</a></td><td class="text-right">5%</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#9">App\Http\Controllers\OrganiserController</a></td><td class="text-right">9%</td></tr>
+       <tr><td><a href="Middleware/JwtMiddleware.php.html#12">App\Http\Middleware\JwtMiddleware</a></td><td class="text-right">58%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/CommentControler.php.html#11">App\Http\Controllers\CommentControler</a></td><td class="text-right">263</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#12">App\Http\Controllers\EventController</a></td><td class="text-right">239</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#10">App\Http\Controllers\WebApi</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#13">App\Http\Controllers\UserController</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#8">App\Http\Controllers\Web\WebUserControler</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#9">App\Http\Controllers\OrganiserController</a></td><td class="text-right">55</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#9">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controllers/Web/WebEventsControler.php.html#8">App\Http\Controllers\Web\WebEventsControler</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Middleware/JwtMiddleware.php.html#12">App\Http\Middleware\JwtMiddleware</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/CommentControler.php.html#19"><abbr title="App\Http\Controllers\CommentControler::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#159"><abbr title="App\Http\Controllers\WebApi::getDelete">getDelete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#42"><abbr title="App\Http\Controllers\WebApi::getClient">getClient</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#50"><abbr title="App\Http\Controllers\WebApi::getToken">getToken</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#65"><abbr title="App\Http\Controllers\WebApi::getHeader">getHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#75"><abbr title="App\Http\Controllers\WebApi::getIndex">getIndex</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#85"><abbr title="App\Http\Controllers\WebApi::getPost">getPost</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#122"><abbr title="App\Http\Controllers\WebApi::getPatch">getPatch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebEventsControler.php.html#18"><abbr title="App\Http\Controllers\Web\WebEventsControler::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#25"><abbr title="App\Http\Controllers\WebApi::withHeader">withHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#10"><abbr title="App\Http\Controllers\Web\WebUserControler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#19"><abbr title="App\Http\Controllers\Web\WebUserControler::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#32"><abbr title="App\Http\Controllers\Web\WebUserControler::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#49"><abbr title="App\Http\Controllers\Web\WebUserControler::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#64"><abbr title="App\Http\Controllers\Web\WebUserControler::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#37"><abbr title="App\Http\Controllers\WebApi::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#82"><abbr title="App\Http\Controllers\UserController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#34"><abbr title="App\Http\Controllers\CommentControler::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#66"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#48"><abbr title="App\Http\Controllers\CommentControler::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#72"><abbr title="App\Http\Controllers\CommentControler::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#22"><abbr title="App\Http\Controllers\EventController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#42"><abbr title="App\Http\Controllers\EventController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#61"><abbr title="App\Http\Controllers\EventController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#85"><abbr title="App\Http\Controllers\EventController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#19"><abbr title="App\Http\Controllers\OrganiserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#28"><abbr title="App\Http\Controllers\OrganiserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#37"><abbr title="App\Http\Controllers\OrganiserController::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#50"><abbr title="App\Http\Controllers\OrganiserController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SubComment.php.html#13"><abbr title="App\Http\Controllers\SubComment::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SubComment.php.html#20"><abbr title="App\Http\Controllers\SubComment::Show">Show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/SubComment.php.html#28"><abbr title="App\Http\Controllers\SubComment::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#15"><abbr title="App\Http\Controllers\UserController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#26"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#52"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Middleware/JwtMiddleware.php.html#21"><abbr title="App\Http\Middleware\JwtMiddleware::handle">handle</abbr></a></td><td class="text-right">58%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controllers/CommentControler.php.html#48"><abbr title="App\Http\Controllers\CommentControler::update">update</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#72"><abbr title="App\Http\Controllers\CommentControler::destroy">destroy</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Middleware/RedirectIfAuthenticated.php.html#19"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#22"><abbr title="App\Http\Controllers\EventController::show">show</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#61"><abbr title="App\Http\Controllers\EventController::update">update</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#85"><abbr title="App\Http\Controllers\EventController::destroy">destroy</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#52"><abbr title="App\Http\Controllers\UserController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#122"><abbr title="App\Http\Controllers\WebApi::getPatch">getPatch</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/Web/WebApi.php.html#85"><abbr title="App\Http\Controllers\WebApi::getPost">getPost</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#66"><abbr title="App\Http\Controllers\UserController::login">login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#19"><abbr title="App\Http\Controllers\CommentControler::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/CommentControler.php.html#34"><abbr title="App\Http\Controllers\CommentControler::store">store</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/EventController.php.html#42"><abbr title="App\Http\Controllers\EventController::store">store</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#50"><abbr title="App\Http\Controllers\OrganiserController::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#37"><abbr title="App\Http\Controllers\OrganiserController::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/OrganiserController.php.html#19"><abbr title="App\Http\Controllers\OrganiserController::show">show</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/Web/WebEventsControler.php.html#18"><abbr title="App\Http\Controllers\Web\WebEventsControler::index">index</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#32"><abbr title="App\Http\Controllers\Web\WebUserControler::edit">edit</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/Web/WebUserControler.php.html#64"><abbr title="App\Http\Controllers\Web\WebUserControler::destroy">destroy</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controllers/UserController.php.html#26"><abbr title="App\Http\Controllers\UserController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Middleware/JwtMiddleware.php.html#21"><abbr title="App\Http\Middleware\JwtMiddleware::handle">handle</abbr></a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.3</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.3</a> with <a href="https://xdebug.org/">Xdebug 3.0.0</a> and <a href="https://phpunit.de/">PHPUnit 9.4.3</a> at Thu Dec 3 19:00:15 UTC 2020.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js" type="text/javascript"></script>
+  <script src="../_js/d3.min.js" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,3,0,0,0,0,1,0,0,0,0,8], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([38,0,0,0,0,0,1,0,0,0,0,3], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,0,"<a href=\"Controllers\/ApiController.php.html#8\">App\\Http\\Controllers\\ApiController<\/a>"],[5.128205128205128,17,"<a href=\"Controllers\/CommentControler.php.html#11\">App\\Http\\Controllers\\CommentControler<\/a>"],[100,0,"<a href=\"Controllers\/Controller.php.html#10\">App\\Http\\Controllers\\Controller<\/a>"],[4.444444444444445,16,"<a href=\"Controllers\/EventController.php.html#12\">App\\Http\\Controllers\\EventController<\/a>"],[9.523809523809524,8,"<a href=\"Controllers\/OrganiserController.php.html#9\">App\\Http\\Controllers\\OrganiserController<\/a>"],[0,3,"<a href=\"Controllers\/SubComment.php.html#10\">App\\Http\\Controllers\\SubComment<\/a>"],[0,10,"<a href=\"Controllers\/UserController.php.html#13\">App\\Http\\Controllers\\UserController<\/a>"],[0,13,"<a href=\"Controllers\/Web\/WebApi.php.html#10\">App\\Http\\Controllers\\WebApi<\/a>"],[0,2,"<a href=\"Controllers\/Web\/WebEventsControler.php.html#8\">App\\Http\\Controllers\\Web\\WebEventsControler<\/a>"],[0,7,"<a href=\"Controllers\/Web\/WebUserControler.php.html#8\">App\\Http\\Controllers\\Web\\WebUserControler<\/a>"],[100,0,"<a href=\"Kernel.php.html#8\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Middleware\/Authenticate.php.html#7\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[58.333333333333336,4,"<a href=\"Middleware\/JwtMiddleware.php.html#12\">App\\Http\\Middleware\\JwtMiddleware<\/a>"],[100,0,"<a href=\"Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,4,"<a href=\"Middleware\/RedirectIfAuthenticated.php.html#9\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Controllers\/CommentControler.php.html#13\">App\\Http\\Controllers\\CommentControler::index<\/a>"],[0,3,"<a href=\"Controllers\/CommentControler.php.html#19\">App\\Http\\Controllers\\CommentControler::show<\/a>"],[0,3,"<a href=\"Controllers\/CommentControler.php.html#34\">App\\Http\\Controllers\\CommentControler::store<\/a>"],[0,5,"<a href=\"Controllers\/CommentControler.php.html#48\">App\\Http\\Controllers\\CommentControler::update<\/a>"],[0,5,"<a href=\"Controllers\/CommentControler.php.html#72\">App\\Http\\Controllers\\CommentControler::destroy<\/a>"],[100,1,"<a href=\"Controllers\/EventController.php.html#14\">App\\Http\\Controllers\\EventController::index<\/a>"],[0,4,"<a href=\"Controllers\/EventController.php.html#22\">App\\Http\\Controllers\\EventController::show<\/a>"],[0,3,"<a href=\"Controllers\/EventController.php.html#42\">App\\Http\\Controllers\\EventController::store<\/a>"],[0,4,"<a href=\"Controllers\/EventController.php.html#61\">App\\Http\\Controllers\\EventController::update<\/a>"],[0,4,"<a href=\"Controllers\/EventController.php.html#85\">App\\Http\\Controllers\\EventController::destroy<\/a>"],[100,1,"<a href=\"Controllers\/OrganiserController.php.html#12\">App\\Http\\Controllers\\OrganiserController::index<\/a>"],[0,2,"<a href=\"Controllers\/OrganiserController.php.html#19\">App\\Http\\Controllers\\OrganiserController::show<\/a>"],[0,1,"<a href=\"Controllers\/OrganiserController.php.html#28\">App\\Http\\Controllers\\OrganiserController::store<\/a>"],[0,2,"<a href=\"Controllers\/OrganiserController.php.html#37\">App\\Http\\Controllers\\OrganiserController::update<\/a>"],[0,2,"<a href=\"Controllers\/OrganiserController.php.html#50\">App\\Http\\Controllers\\OrganiserController::destroy<\/a>"],[0,1,"<a href=\"Controllers\/SubComment.php.html#13\">App\\Http\\Controllers\\SubComment::index<\/a>"],[0,1,"<a href=\"Controllers\/SubComment.php.html#20\">App\\Http\\Controllers\\SubComment::Show<\/a>"],[0,1,"<a href=\"Controllers\/SubComment.php.html#28\">App\\Http\\Controllers\\SubComment::store<\/a>"],[0,1,"<a href=\"Controllers\/UserController.php.html#15\">App\\Http\\Controllers\\UserController::index<\/a>"],[0,2,"<a href=\"Controllers\/UserController.php.html#26\">App\\Http\\Controllers\\UserController::store<\/a>"],[0,3,"<a href=\"Controllers\/UserController.php.html#52\">App\\Http\\Controllers\\UserController::show<\/a>"],[0,3,"<a href=\"Controllers\/UserController.php.html#66\">App\\Http\\Controllers\\UserController::login<\/a>"],[0,1,"<a href=\"Controllers\/UserController.php.html#82\">App\\Http\\Controllers\\UserController::logout<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#25\">App\\Http\\Controllers\\WebApi::withHeader<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#37\">App\\Http\\Controllers\\WebApi::__construct<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#42\">App\\Http\\Controllers\\WebApi::getClient<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#50\">App\\Http\\Controllers\\WebApi::getToken<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#65\">App\\Http\\Controllers\\WebApi::getHeader<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#75\">App\\Http\\Controllers\\WebApi::getIndex<\/a>"],[0,3,"<a href=\"Controllers\/Web\/WebApi.php.html#85\">App\\Http\\Controllers\\WebApi::getPost<\/a>"],[0,3,"<a href=\"Controllers\/Web\/WebApi.php.html#122\">App\\Http\\Controllers\\WebApi::getPatch<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebApi.php.html#159\">App\\Http\\Controllers\\WebApi::getDelete<\/a>"],[0,2,"<a href=\"Controllers\/Web\/WebEventsControler.php.html#18\">App\\Http\\Controllers\\Web\\WebEventsControler::index<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebUserControler.php.html#10\">App\\Http\\Controllers\\Web\\WebUserControler::__construct<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebUserControler.php.html#19\">App\\Http\\Controllers\\Web\\WebUserControler::index<\/a>"],[0,2,"<a href=\"Controllers\/Web\/WebUserControler.php.html#32\">App\\Http\\Controllers\\Web\\WebUserControler::edit<\/a>"],[0,1,"<a href=\"Controllers\/Web\/WebUserControler.php.html#49\">App\\Http\\Controllers\\Web\\WebUserControler::update<\/a>"],[0,2,"<a href=\"Controllers\/Web\/WebUserControler.php.html#64\">App\\Http\\Controllers\\Web\\WebUserControler::destroy<\/a>"],[0,2,"<a href=\"Middleware\/Authenticate.php.html#15\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[58.333333333333336,4,"<a href=\"Middleware\/JwtMiddleware.php.html#21\">App\\Http\\Middleware\\JwtMiddleware::handle<\/a>"],[0,4,"<a href=\"Middleware\/RedirectIfAuthenticated.php.html#19\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
